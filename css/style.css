@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f4f4f4;
+    color: #292929;
+    padding: 0 2rem;
+}
+
+.main-image img {
+    border-radius: 50%;
+    width: 90px;
+    border: 5px solid #ddd;
+}
+
+.members img {
+    border-radius: 50%;
+    width: 30px;
+    border: 2px solid #ddd;
+    margin: 0 -12px 0 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#card .container {
+    background: #fff;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto;
+    border-radius: 9px;
+    box-shadow: 0px 3px 10px 1px rgb(185, 185, 185);
+    padding: 2rem;
+}
+
+/* pending invites */
+#card .column-invites {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 3.2rem; */
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: #f4f4f4 2px solid;
+}
+
+.pending-invites h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.create-group i {
+    font-size: 1rem;
+    padding-right: 0.5rem;
+}
+
+.create-group a {
+    display: inline-block;
+    color: #fff;
+    background: #548cfb;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px -3px rgba(170, 198, 250, 1);
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.create-group a:hover {
+    background: #3e73dc;
+    box-shadow: none;
+}
+
+/* group column */
+.group-column {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    padding-bottom: 2rem;
+}
+
+.group-content {
+    margin: 0 4rem 0 1rem;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.invited {
+    color: #555;
+    font-size: 0.9rem;
+    padding: 0.4rem 0 0.3rem 0;
+}
+
+.invited span {
+    font-weight: 600;
+}
+
+.users {
+    color: #777;
+    font-size: 0.75rem;
+}
+
+.members {
+    padding-top: 0.5rem;
+}
+
+/* buttons */
+.btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-join {
+    color: #03d726;
+}
+
+.btn-decline {
+    color: #d70303;
+}
+
+.btn-join:hover,
+.btn-decline:hover {
+    color: #3e73dc;
+}
